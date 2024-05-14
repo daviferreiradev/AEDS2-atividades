@@ -1,7 +1,7 @@
+// pilha-celula/pilha.java
 import java.util.NoSuchElementException;
 
 public class Pilha<E> {
-
 	private Celula<E> topo;
 	private Celula<E> fundo;
 
@@ -23,7 +23,6 @@ public class Pilha<E> {
 	}
 
 	public E desempilhar() {
-
 		E desempilhado = consultarTopo();
 		topo = topo.getProximo();
 		return desempilhado;
@@ -31,13 +30,11 @@ public class Pilha<E> {
 	}
 
 	public E consultarTopo() {
-
 		if (vazia()) {
 			throw new NoSuchElementException("Nao há nenhum item na pilha!");
 		}
 
 		return topo.getItem();
-
 	}
 
 }   

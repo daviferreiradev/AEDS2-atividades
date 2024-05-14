@@ -1,5 +1,4 @@
-// pilha-celula/Celula.java
-
+// fila-celula/Celula.java
 public class Celula<T> {
 	private final T item;
 	private Celula<T> proximo;
